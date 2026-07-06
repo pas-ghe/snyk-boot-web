@@ -1,4 +1,4 @@
-# Snyk Boot Web Demo - Pas DOTC Events
+# Snyk Boot Web Demo - Pas DOTC Events - Updated
 
 ![alt tag](https://i.ibb.co/7tnp1B6/snyk-logo.png)
 
