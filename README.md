@@ -1,6 +1,8 @@
-# Snyk Boot Web Demo - Pas DOTC Events - Updated
+# Snyk Boot Web Demo - Pas DOTC Events - Updated by pas
 
 ![alt tag](https://i.ibb.co/7tnp1B6/snyk-logo.png)
+
+Spring Boot demo application used for Snyk security scanning demos, including container image builds and Kubernetes deployment examples.
 
 ## Steps to create the container image
 
@@ -39,9 +41,9 @@ $ mvn package
 [INFO] ------------------------------------------------------------------------
 ```
 
-- Make sure Springboot JAR file was created at "**target/snyk-boot-web-0.0.1-SNAPSHOT.jar**"
+- Make sure the Spring Boot JAR file was created at `target/snyk-boot-web-0.0.1-SNAPSHOT.jar`
 
-- Create a container image as follows here I am using Dockerhub and you would need Docker desktop running to perform these steps
+- Create a container image as follows. These steps use Docker Hub and require Docker Desktop to be running.
 
 ```shell
 $ docker build --tag=snyk-boot-web:latest .
@@ -50,7 +52,7 @@ $ docker push {USERID}/snyk-boot-web:latest
 ```
 ## Run on Kubernetes
 
-- The following Kubernetes config file exists in the ./kubernetes folder you can use that as a starting guide. 
+- Sample Kubernetes manifests are available in the `./kubernetes` folder and can be used as a starting guide.
 
 _Note: No service is exposed so you can't access the application without a Service or using port forward to allow access. The Kubernetes integration does not need the application exposed_ 
 
@@ -79,5 +81,6 @@ spec:
             - containerPort: 5000
 ```
 
-<hr />
-Pas Apicella [pas at snyk.io] is a Principal Solution Engineer at Snyk APJ 
+---
+
+Pas Apicella [pas at snyk.io] is a Principal Solution Engineer at Snyk APJ
